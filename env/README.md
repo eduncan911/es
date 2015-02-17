@@ -48,15 +48,15 @@ HandleEvents registers the event handler internally
 
 
 
-### func (\*Container) HandleHttp
+### func (\*Container) HandleHTTP
 ``` go
-func (c *Container) HandleHttp(
+func (c *Container) HandleHTTP(
     method string,
     path string,
     handler api.Handler,
 )
 ```
-HandleHttp registers http handlers with api.Routes internally
+HandleHTTP registers http handlers with api.Routes internally
 
 
 
@@ -151,8 +151,11 @@ Publisher is an interface for publishing contracts
 ## type Registrar
 ``` go
 type Registrar interface {
-    HandleHttp(method string, path string, handler api.Handler)
+    // HandleHTTP registers http handlers with api.Routes internally
+    HandleHTTP(method string, path string, handler api.Handler)
+    // HandleEvents registers the event handler internally
     HandleEvents(name string, handler EventHandler)
+    // ResetData is used to register func()s to rollback data changes
     ResetData(name string, action func())
 }
 ```

@@ -20,8 +20,8 @@ func NewContainer() *Container {
 	}
 }
 
-// HandleHttp registers http handlers with api.Routes internally
-func (c *Container) HandleHttp(
+// HandleHTTP registers http handlers with api.Routes internally
+func (c *Container) HandleHTTP(
 	method string,
 	path string,
 	handler api.Handler,
