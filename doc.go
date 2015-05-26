@@ -1,4 +1,4 @@
-/*Package es is an event-sourcing infrastructure and specs framework for GoLang originally created by Rinat Abdullin (https://github.com/abdullin/omni/) and modified by Eric Duncan (https://github.com/eduncan911/es/).
+/*Package es is an event-sourcing infrastructure and specs framework for GoLang originally created by Rinat Abdullin.
 
 This folder contains the core infrastructure for prototyping event-driven back-ends. You can import it in your go and move from there.
 

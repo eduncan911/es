@@ -2,8 +2,7 @@
 # es
     import "github.com/eduncan911/es"
 
-Package es is an event-sourcing infrastructure and specs framework for GoLang originally designed by Rinat Abdullin (a 
-href="https://github.com/abdullin/omni/">https://github.com/abdullin/omni/</a>) and modified by Eric Duncan (a href="https://github.com/eduncan911/es/">https://github.com/eduncan911/es/</a>).
+Package es is an event-sourcing infrastructure and specs framework for GoLang originally created by Rinat Abdullin.
 
 This folder contains the core infrastructure for prototyping event-driven back-ends. You can import it in your go and move from there.
 
